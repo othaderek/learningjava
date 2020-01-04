@@ -16,11 +16,15 @@ public class PrintStars {
     }
 
     public static void countStars(Integer integer){
+
         String starString = "";
+
         for (int i = integer; i > 0; i--){
             starString += printStar();
         }
+
         System.out.println(starString);
+
     }
 
     public static String printStar(){
