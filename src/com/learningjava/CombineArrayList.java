@@ -20,19 +20,12 @@ public class CombineArrayList {
 
     }
 
-    public static int combine(ArrayList<Integer> list1, ArrayList<Integer> list2 ){
-
-        int num1 = 0;
-
-        for (int i : list1){
-            num1 += i;
-        }
+    public static ArrayList<Integer> combine(ArrayList<Integer> list1, ArrayList<Integer> list2 ){
 
         for (int i : list2){
-            num1 += i;
+            list1.add(i);
         }
-        return num1;
-
+        return(list1);
     }
 
 }
