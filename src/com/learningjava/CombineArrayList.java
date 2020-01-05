@@ -41,7 +41,7 @@ public class CombineArrayList {
             if (!answer){
                 list1.add(i);
             }
-            
+
         }
         return(list1);
     }
