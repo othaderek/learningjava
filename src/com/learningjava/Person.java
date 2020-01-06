@@ -7,12 +7,16 @@ public class Person {
     private int height;
     private int weight;
 
-    public Person(String initialName){
-        this.age = 0;
+    public Person(String initialName, int initialAge, int initialWeight, int initialHeight){
+        this.age = initialAge;
         this.name = initialName;
-        this.height = 0;
-        this.weight = 0;
+        this.height = initialHeight;
+        this.weight = initialWeight;
 
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setHeight(int height){
@@ -42,4 +46,6 @@ public class Person {
     public void becomeOlder(){
         this.age++;
     }
+
+
 }
